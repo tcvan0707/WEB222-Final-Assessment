@@ -1,0 +1,40 @@
+h2 {
+  padding-bottom: 0;
+}
+
+.content {
+  width: 90%;
+  height: 430px;
+  min-width: 700px;
+}
+
+#contactUs {
+  float: left;
+  width: 46.5%;
+  margin-bottom: 25px;
+}
+
+#note {
+  font-family: 'Poppins', cursive;
+}
+
+.content p {
+  text-align: center;
+}
+
+#BusinessHours {
+  margin: 0 auto;
+}
+
+/* Google Map for Seneca */
+#map {
+  height: 85.9%;
+  border: 1px solid #17252a;
+  width: 49%;
+  margin-top: 30px;
+}
+
+.contactmail {
+  margin-left: 40px;
+  margin-top: 10px;
+}

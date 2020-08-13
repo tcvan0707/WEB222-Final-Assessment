@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Information| Thanh Van</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./contactUs.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link for facebook, instagram, google icon-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/logo1.jpg" />
+    <script src="./index.js"></script>
+    <script src="./contactUs.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACSon72iH_8UdPUjwlYSyEEipxgvjuf-0&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="menuButton" onclick="showMenu()">
+          <span id="1"></span>
+          <span id="2"></span>
+          <span id="3"></span>
+        </div>
+        <div>
+          <a id="name" href="#"
+            ><img id="logo" src="./images/logo.png" alt="Coffee" /><b>Vietnamese Coffee</b></a
+          >
+        </div>
+        <div>
+          <div class="signIn">
+            <button class="button" type="button" onclick="showSignIn()">Sign In</button>
+          </div>
+          <div>
+            <div class="logOut">
+              <button class="button" type="button" onclick="showLogOut()">Log Out</button>
+            </div>
+          </div>
+          <div id="welcome"></div>
+        </div>
+      </header>
+      <nav class="navigation">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!--MEMBER SIGN IN-->
+
+      <section class="screen">
+        <form class="loginForm" method="POST" action="#" onsubmit="return logIn();">
+          <h2>Login</h2>
+          <div>
+            <div class="inputBox">
+              <input type="checkbox" name="checkbox" value="1" />
+              <span>Save Password</span>
+              <br />
+              <input class="login" name="login" type="submit" value="login" />
+            </div>
+            <p>Member's Name</p>
+            <input
+              id="User"
+              size="20"
+              maxlength="20"
+              name="username"
+              placeholder="Enter your name here"
+              required
+              title="Username must start with a letter, and have at least 6 characters!"
+              pattern="^([a-zA-Z]+)[a-zA-Z\d]{5,}$"
+            />
+          </div>
+          <div>
+            <p>Password</p>
+            <input
+              id="Pass"
+              type="password"
+              name="password"
+              placeholder="Enter your password here"
+              required
+              title="Password must be 8 characters long, your password should have at least 1 capital, and 1 symbol!"
+              pattern="^(?=.*[A-Z])[a-zA-Z]+(?=.*\d)[A-Za-z\d]{7,}$"
+            />
+          </div>
+        </form>
+        <!--WORKING HOURS-->
+        <div class="content">
+          <div id="contactUs">
+            <h1>Contact Information</h1>
+            <h2>Vietnamese Coffee</h2>
+            <p>1750 Finch Ave E, North York, ON M2J 5G3</p>
+            <p>Tel: (416) 868 6363</p>
+            <p>Email: tcvan@myseneca.ca</p>
+            <h2>Business Hours</h2>
+            <table id="BusinessHours">
+              <tr>
+                <td>Monday</td>
+                <td>10:00 a.m - 9:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>10:00 a.m - 9:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>10:00 a.m - 9:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>10:00 a.m - 9:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>10:00 a.m - 9:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 a.m - 7:00 p.m</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>11:00 a.m - 6:00 p.m</td>
+              </tr>
+            </table>
+
+            <div id="note">
+              <p>We Open From 11:00 a.m - 5:00 p.m on Holidays</p>
+            </div>
+            <div class="contactmail">
+              You can contact us via Email!
+              <a id="contact" href="contact.html">More Information</a>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </section>
+      <!--FOOTER-->
+      <footer class="footer">
+        <p>Please Follow Us</p>
+        <a href="https://www.google.com" class="fa fa-google"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <div>
+          <p class="copyright">&copy;Thanh Cong Van - 136708195 - tcvan@myseneca.ca</p>
+        </div>
+      </footer>
+      <div id="popUp" onclick="closeForm()"></div>
+    </div>
+  </body>
+</html>

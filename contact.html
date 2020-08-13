@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration | Thanh Van</title>
+    <link href="./contact.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link for facebook, instagram, google icon-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/logo1.jpg" />
+    <script src="./index.js" defer ></script>
+    <script src="./contact.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!--HOME PAGE-->
+      <header>
+        <div id="menuButton" onclick="showMenu()">
+          <span id="1"></span>
+          <span id="2"></span>
+          <span id="3"></span>
+        </div>
+        <div>
+          <a id="name" href="#"
+            ><img id="logo" src="./images/logo.png" alt="Coffee" /><b>Vietnamese Coffee</b></a
+          >
+        </div>
+        <div>
+          <div class="signIn">
+            <button class="button" type="button" onclick="showSignIn()">Sign In</button>
+          </div>
+          <div>
+            <div class="logOut">
+              <button class="button" type="button" onclick="showLogOut()">Log Out</button>
+            </div>
+          </div>
+          <div id="welcome"></div>
+        </div>
+      </header>
+      <nav class="navigation">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!--MEMBER SIGN IN-->
+
+      <section class="screen">
+        <form class="loginForm" method="POST" action="#" onsubmit="return logIn();">
+          <h2>Login</h2>
+          <div>
+            <div class="inputBox">
+              <input type="checkbox" name="checkbox" value="1" />
+              <span>Save Password</span>
+              <br />
+              <input class="login" name="login" type="submit" value="login" />
+            </div>
+            <p>Member's Name</p>
+            <input
+              id="User"
+              size="20"
+              maxlength="20"
+              name="username"
+              placeholder="Enter your name here"
+              required
+              title="Username must start with a letter, and have at least 6 characters!"
+              pattern="^([a-zA-Z]+)[a-zA-Z\d]{5,}$"
+            />
+          </div>
+          <div>
+            <p>Password</p>
+            <input
+              id="Pass"
+              type="password"
+              name="password"
+              placeholder="Enter your password here"
+              required
+              title="Password must be 8 characters long, your password should have at least 1 capital, and 1 symbol!"
+              pattern="^(?=.*[A-Z])[a-zA-Z]+(?=.*\d)[A-Za-z\d]{7,}$"
+            />
+          </div>
+        </form>
+      </section>
+
+      <!--CONTACT INFORMATION-->
+      <section>
+        <form
+          class="content1"
+          name="signup"
+          method="POST"
+          action="https://httpbin.org/post"
+          onsubmit="return validation();"
+        >
+          <section class="column">
+            <h4>Personal Information</h4>
+            <div>
+              <label for="username">Username: </label>
+              <input
+                id="username"
+                size="20"
+                maxlength="20"
+                name="username"
+                placeholder="Alternative name"
+                autofocus
+                required
+                title="Username must start with a letter, and have at least 8 characters"
+              />
+            </div>
+            <div>
+              <label for="firstname">First Name: </label>
+              <input
+                id="firstname"
+                size="20"
+                name="firstname"
+                placeholder="Your first name"
+                required
+                title="Letters only"
+              />
+            </div>
+            <div>
+              <label for="password">Password: </label>
+              <input
+                id="password"
+                type="password"
+                size="20"
+                name="password"
+                placeholder="Your password"
+                required
+                title="Password must be 8 characters long, your password should have at least 1 capital, and 1 symbol"
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name: </label>
+              <input
+                id="lastname"
+                size="20"
+                name="lastname"
+                placeholder="Your last name"
+                required
+                title="Letters only"
+              />
+            </div>
+            <div>
+              <label for="password">Confirm Password: </label>
+              <input
+                id="confirm"
+                type="password"
+                size="20"
+                name="password"
+                placeholder="Confirm Password"
+                required
+                title="Password and confirm password should be the same"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone Number: </label>
+              <input
+                id="phone"
+                type="tel"
+                size="20"
+                maxlength="12"
+                name="phone"
+                placeholder="Your phone number"
+                required
+                title="Phone number must exactly follow 111-111-1111"
+                pattern="^\d{3}-\d{3}-\d{4}$"
+              />
+            </div>
+          </section>
+          <section class="column">
+            <h4>Address</h4>
+            <div>
+              <label for="streetnumber">Street Number: </label>
+              <input
+                id="streetnumber"
+                maxlength="6"
+                name="streetnumber"
+                placeholder="Your street number"
+                required
+                title="Contains only number, unit number followed by a dash (if available) e.g. 70-2801"
+                pattern="^([\d]+)[-]*[\d]*$"
+              />
+            </div>
+            <div>
+              <label for="streetname">Street Name: </label>
+              <input
+                id="streetname"
+                size="20"
+                name="streetname"
+                placeholder="Your street name"
+                required
+                title="Letters only"
+              />
+            </div>
+            <div id="city1">
+              <label for="city">City: </label>
+              <input
+                id="city"
+                size="20"
+                name="city"
+                placeholder="Your current city"
+                required
+                title="Letters only"
+              />
+            </div>
+            <div>
+              <label for="province">Province: </label>
+              <select id="province" name="province">
+                <option value="1">British Columbia</option>
+                <option value="2">Ontario</option>
+                <option value="3">Manitoba</option>
+                <option value="4">Quebec</option>
+              </select>
+            </div>
+            <div>
+              <label for="postal">Postal Code: </label>
+              <input
+                id="postal"
+                size="20"
+                maxlength="6"
+                name="postal"
+                placeholder="Your postal code"
+                required
+                title="Postal code must exactly follow format A1B2C9"
+                pattern="^[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]$"
+              />
+            </div>
+            <form>
+              <div class='radio'>
+                <p>What is it about?</p>
+                <input name="type" type="radio" id="question" value="question" />
+                <label for="question">Question</label>
+  
+                <br />
+                <input name="type" type="radio" id="comment" value="comment" />
+                <label for="comment">Comment</label>
+  
+                <br />
+                <input name="type" type="radio" id="orderproblem" value="orderproblem" />
+                <label for="orderproblem">Order Problem</label>
+                <br/>
+                <br />
+              </div>
+              <input type="text" name='order-number' value="" id='box-num' class='hide' placeholder="order number">
+
+            </form>
+          </section>
+          </div>
+          <section id="errorColumn">
+            <h2 id="showError">You've made some errors</h2>
+            <div id="errors"></div>
+          </section>
+          <!--SUBMIT BUTTON-->
+          <div id="clear">
+            <input class="login" type="submit" name="submit" value="Submit" />
+          </div>
+          <input type="hidden" name="Thanh" id="Thanh" value="Thanh" />
+          <input type="hidden" name="136708195" id="136708195" value="136708195" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

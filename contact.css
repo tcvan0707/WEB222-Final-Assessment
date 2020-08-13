@@ -1,0 +1,98 @@
+.content1 {
+  width: 55%;
+}
+
+.content1 {
+  padding: 5em;
+  width: 500px;
+  margin: 0px auto;
+  background-color: #feffff;
+  border: 1px solid #17252a;
+  border-radius: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+h3 {
+  margin: 15px 15px 5px;
+}
+.content1 div {
+  display: inline-block;
+  margin-left: -1.6em;
+  margin-right: 2em;
+  margin-left: 20px;
+}
+.content1 div + div {
+  margin-top: 0.6em;
+  margin-left: 20px;
+}
+.content1 label {
+  width: 185px;
+  display: block;
+  text-align: left;
+}
+
+.content1 input {
+  width: 180px;
+}
+
+#clear {
+  text-align: center;
+  width: 90%;
+}
+
+#clear input {
+  width: 120px;
+  margin: 0px auto;
+  margin-left: 2cm;
+}
+
+.column {
+  width: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+#errorColumn {
+  width: 45%;
+  margin: 15px 0;
+  display: none;
+}
+
+#errors {
+  overflow: hidden;
+  float: left;
+  text-align: left;
+}
+#showError {
+  margin-left: 52px;
+  float: left;
+}
+
+#errors img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+#form-radio label {
+  display: inline-block;
+}
+
+#form-radio input {
+  min-width: 20px;
+}
+
+.radio input {
+  width: 20px;
+}
+
+.radio label {
+  display: inline-block;
+}
+
+#box-num {
+  width: 70%;
+  margin-left: 20px;
+}

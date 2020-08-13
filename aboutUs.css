@@ -1,0 +1,41 @@
+#text {
+  float: left;
+  width: 50%;
+  margin-left: 0.6em;
+  margin-top: 3em;
+  font-family: 'Lemonada', cursive;
+}
+
+#logo1 {
+  height: 90px;
+  width: 250px;
+  float: center;
+  padding: 12px 10px 7px 0px;
+  margin-left: 2cm;
+  margin-bottom: 3px;
+}
+
+.aboutUs > img {
+  height: 360px;
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid #17252a;
+  margin: 2em 0em 1em 3em;
+  float: left;
+}
+
+.aboutUs {
+  width: 600px;
+}
+
+.content2 {
+  padding: 1em;
+  width: 750px;
+  margin: 0px auto;
+  background-color: #feffff;
+  border: 1px solid #17252a;
+  border-radius: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
