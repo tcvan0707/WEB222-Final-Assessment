@@ -1,0 +1,33 @@
+.content {
+  width: 90%;
+}
+.content table {
+  margin: 0 auto 5px auto;
+  float: left;
+  width: 33%;
+}
+
+td,
+th {
+  border: 1px solid #17252a;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #def2f1;
+}
+
+th {
+  background-color: pink;
+}
+
+th {
+  color: black;
+  font-family: 'Poppins', cursive;
+  text-align: center;
+  font-size: 1.8em;
+  height: 53px;
+}
+
+td + td {
+  text-align: center;
+  font-style: italic;
+}
